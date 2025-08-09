@@ -4,9 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import profileImg from '../../public/me.png';
 import { useTypewriter } from "./usetypewriter";
-import { useState, useEffect } from 'react'; 
-import api from '../../utils/api';
-import styles from '../styles/Contact.module.css';
+import { useState } from 'react';
 
 interface ExperienceData {
   _id: string; 
