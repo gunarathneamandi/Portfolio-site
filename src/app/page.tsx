@@ -608,7 +608,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24">
             {/* Enhanced Contact Form */}
             <div className="glass-morphism p-10 rounded-3xl shadow-2xl w-full md:w-1/2 lg:w-2/5 flex flex-col justify-between neon-border hover-lift" style={{ minHeight: '500px' }}>
-              <h2 className="text-4xl font-extrabold text-white mb-8 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Let's Connect</h2>
+              <h2 className="text-4xl font-extrabold text-white mb-8 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Let&apos;s Connect</h2>
               <form onSubmit={handleSubmit} className="flex flex-col gap-8 w-full">
                 <div className="relative">
                   <input
