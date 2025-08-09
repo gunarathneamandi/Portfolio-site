@@ -355,7 +355,7 @@ export default function Hero() {
         {/* Enhanced Content - Mobile Responsive */}
         <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 md:px-6 pt-20 md:pt-1">
           {/* Left Content */}
-          <div className="text-center md:text-left space-y-6 md:space-y-8 w-full md:w-1/2 z-10 slide-in-up mt-8 md:mt-30">
+          <div className="text-center md:text-left space-y-6 md:space-y-8 w-full md:w-1/2 z-10 slide-in-up mt-8 md:mt-40">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-tight z-20 text-white drop-shadow-2xl">
               <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 text-transparent bg-clip-text drop-shadow-lg">{name}</span><span className="animate-pulse text-cyan-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">|</span>
             </h1>
