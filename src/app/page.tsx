@@ -327,11 +327,11 @@ export default function Hero() {
         </nav>
 
         {/* Enhanced CV Section - Mobile Responsive */}
-        <div className="fixed bottom-4 left-0 right-0 md:absolute md:top-6 md:left-10 z-20 flex justify-center md:justify-start gap-2 md:gap-4 slide-in-up px-4 md:px-0">
+        <div className="absolute top-24 sm:top-6 left-0 right-0 sm:left-10 z-20 flex justify-center sm:justify-start gap-2 md:gap-4 slide-in-up px-4 sm:px-0">
           <a
             href="/cv.pdf"
             download="Amandi_Gunarathne_CV.pdf"
-            className="flex items-center gap-2 bg-gradient-to-r from-[#6C63FF] to-[#4F46E5] hover:from-[#5B54D9] hover:to-[#3B82F6] px-6 py-3 rounded-xl text-white font-medium transition-all duration-300 shadow-2xl hover:shadow-3xl hover-lift glow neon-border"
+            className="flex items-center gap-1 sm:gap-2 bg-gradient-to-r from-[#6C63FF] to-[#4F46E5] hover:from-[#5B54D9] hover:to-[#3B82F6] px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-white text-sm sm:text-base font-medium transition-all duration-300 shadow-2xl hover:shadow-3xl hover-lift glow neon-border"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -342,7 +342,7 @@ export default function Hero() {
             href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 glass-morphism hover:bg-white/30 px-6 py-3 rounded-xl text-white font-medium transition-all duration-300 shadow-2xl hover:shadow-3xl hover-lift neon-border"
+            className="flex items-center gap-1 sm:gap-2 glass-morphism hover:bg-white/30 px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-white text-sm sm:text-base font-medium transition-all duration-300 shadow-2xl hover:shadow-3xl hover-lift neon-border"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
