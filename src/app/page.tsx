@@ -316,16 +316,18 @@ export default function Hero() {
           <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-500 to-purple-600 opacity-6 rounded-full top-[70%] left-[75%] blur-[180px] -z-10" />
         </div>
 
-        {/* Enhanced Navigation */}
-        <nav className="absolute top-6 right-10 text-sm space-x-6 z-20">
-          <a href="#about" className="bg-white/20 backdrop-blur-md border border-white/30 px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium">About me</a>
-          <a href="#experience" className="bg-white/20 backdrop-blur-md border border-white/30 px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium">Experience</a>
-          <a href="#skills" className="bg-white/20 backdrop-blur-md border border-white/30 px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium">Work & Skills</a>
-          <a href="#contact" className="bg-white/20 backdrop-blur-md border border-white/30 px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium">Contact me</a>
+        {/* Enhanced Navigation - Now Mobile Responsive */}
+        <nav className="fixed top-0 left-0 right-0 p-4 flex justify-center md:justify-end md:absolute md:top-6 md:right-10 text-sm z-30 bg-black/30 backdrop-blur-md md:bg-transparent md:backdrop-blur-none">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-6">
+            <a href="#about" className="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium text-xs md:text-sm">About me</a>
+            <a href="#experience" className="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium text-xs md:text-sm">Experience</a>
+            <a href="#skills" className="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium text-xs md:text-sm">Work & Skills</a>
+            <a href="#contact" className="bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-white/30 transition-all duration-300 hover:scale-110 text-white font-medium text-xs md:text-sm">Contact me</a>
+          </div>
         </nav>
 
-        {/* Enhanced CV Section */}
-        <div className="absolute top-6 left-10 z-20 flex gap-4 slide-in-up">
+        {/* Enhanced CV Section - Mobile Responsive */}
+        <div className="fixed bottom-4 left-0 right-0 md:absolute md:top-6 md:left-10 z-20 flex justify-center md:justify-start gap-2 md:gap-4 slide-in-up px-4 md:px-0">
           <a
             href="/cv.pdf"
             download="Amandi_Gunarathne_CV.pdf"
@@ -350,21 +352,21 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Enhanced Content */}
-        <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 pt-1">
+        {/* Enhanced Content - Mobile Responsive */}
+        <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 md:px-6 pt-20 md:pt-1">
           {/* Left Content */}
-          <div className="text-left space-y-8 md:w-1/2 z-10 slide-in-up">
-            <h1 className="text-6xl md:text-8xl font-extrabold leading-tight z-20 text-white drop-shadow-2xl">
-              <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 text-transparent bg-clip-text drop-shadow-lg">{name}</span><span className="animate-pulse text-cyan-400 text-7xl">|</span>
+          <div className="text-center md:text-left space-y-6 md:space-y-8 w-full md:w-1/2 z-10 slide-in-up mt-8 md:mt-0">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-tight z-20 text-white drop-shadow-2xl">
+              <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 text-transparent bg-clip-text drop-shadow-lg">{name}</span><span className="animate-pulse text-cyan-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">|</span>
             </h1>
-            <div className="mt-12 grid grid-cols-2 gap-8 text-center glass-morphism p-8 rounded-2xl shadow-2xl w-fit neon-border hover-lift">
+            <div className="mt-8 md:mt-12 grid grid-cols-2 gap-4 md:gap-8 text-center glass-morphism p-4 md:p-8 rounded-2xl shadow-2xl mx-auto md:mx-0 w-fit neon-border hover-lift">
               <div className="fade-in-scale">
-                <p className="text-5xl font-extrabold text-white">1+</p>
-                <p className="uppercase text-sm tracking-widest text-gray-300 mt-2">Years Experience</p>
+                <p className="text-3xl md:text-5xl font-extrabold text-white">1+</p>
+                <p className="uppercase text-xs md:text-sm tracking-widest text-gray-300 mt-2">Years Experience</p>
               </div>
               <div className="fade-in-scale" style={{animationDelay: '0.2s'}}>
-                <p className="text-5xl font-extrabold text-white">10+</p>
-                <p className="uppercase text-sm tracking-widest text-gray-300 mt-2">Completed Projects</p>
+                <p className="text-3xl md:text-5xl font-extrabold text-white">10+</p>
+                <p className="uppercase text-xs md:text-sm tracking-widest text-gray-300 mt-2">Completed Projects</p>
               </div>
             </div>
             
@@ -384,9 +386,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative mt-10 md:mt-0 md:w-1/2 z-10">
-            <div className="relative overflow-hidden rounded-3xl">
+          {/* Image - Mobile Responsive */}
+          <div className="relative mt-8 md:mt-0 md:w-1/2 z-10 px-4 md:px-0">
+            <div className="relative overflow-hidden rounded-3xl max-w-md mx-auto md:max-w-none">
               <Image
                 src={profileImg}
                 alt="Amandi Gunarathne"
@@ -395,17 +397,17 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
-            {/* Professional Description Card - Positioned below image */}
-            <div className="mt-8 glass-morphism text-white p-8 rounded-3xl shadow-2xl hover-lift neon-border fade-in-scale" style={{animationDelay: '0.6s'}}>
+            {/* Professional Description Card - Mobile Responsive */}
+            <div className="mt-6 md:mt-8 glass-morphism text-white p-6 md:p-8 rounded-3xl shadow-2xl hover-lift neon-border fade-in-scale mx-auto md:mx-0 max-w-md md:max-w-none" style={{animationDelay: '0.6s'}}>
               <div className="flex flex-col gap-4">
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Professional Overview</h3>
-                <p className="text-lg leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Professional Overview</h3>
+                <p className="text-base md:text-lg leading-relaxed">
                   AI developer specializing in Generative AI, large language models, and predictive analytics with cutting-edge solutions.
                 </p>
-                <div className="flex gap-3 mt-2">
-                  <span className="bg-gradient-to-r from-[#6C63FF] to-[#4F46E5] px-4 py-2 rounded-full text-sm font-medium">AI/ML</span>
-                  <span className="bg-gradient-to-r from-purple-500 to-purple-600 px-4 py-2 rounded-full text-sm font-medium">Deep Learning</span>
-                  <span className="bg-gradient-to-r from-cyan-400 to-blue-500 px-4 py-2 rounded-full text-sm font-medium">NLP</span>
+                <div className="flex flex-wrap gap-2 md:gap-3 mt-2">
+                  <span className="bg-gradient-to-r from-[#6C63FF] to-[#4F46E5] px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium">AI/ML</span>
+                  <span className="bg-gradient-to-r from-purple-500 to-purple-600 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium">Deep Learning</span>
+                  <span className="bg-gradient-to-r from-cyan-400 to-blue-500 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium">NLP</span>
                 </div>
               </div>
             </div>
