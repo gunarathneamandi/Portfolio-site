@@ -327,7 +327,7 @@ export default function Hero() {
         </nav>
 
         {/* Enhanced CV Section - Mobile Responsive */}
-        <div className="absolute top-24 sm:top-6 left-0 right-0 sm:left-10 z-20 flex justify-center sm:justify-start gap-2 md:gap-4 slide-in-up px-4 sm:px-0">
+        <div className="relative top-24 sm:top-6 left-0 right-0 sm:left-10 z-20 flex justify-center sm:justify-start gap-2 md:gap-4 slide-in-up px-4 sm:px-0">
           <a
             href="/cv.pdf"
             download="Amandi_Gunarathne_CV.pdf"
