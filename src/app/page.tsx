@@ -402,7 +402,7 @@ export default function Hero() {
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Professional Overview</h3>
                 <p className="text-base md:text-lg leading-relaxed">
-                  AI developer specializing in Generative AI, large language models, and predictive analytics with cutting-edge solutions.
+                  AI Developer specializing in Generative AI, Large Language Models, and Predictive Analytics, delivering innovative, data-driven solutions.
                 </p>
                 <div className="flex flex-wrap gap-2 md:gap-3 mt-2">
                   <span className="bg-gradient-to-r from-[#6C63FF] to-[#4F46E5] px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium">AI/ML</span>
@@ -516,7 +516,7 @@ export default function Hero() {
         {/* Enhanced Projects Section */}
         <section id="projects" className="w-full py-20 px-6 max-w-7xl mx-auto z-10">
           <h2 className="text-6xl md:text-7xl font-extrabold text-center mb-20 text-white drop-shadow-lg">
-            <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 text-transparent bg-clip-text">My Work</span>
+            <span className="bg-gradient-to-r from-white via-purple-200 to-cyan-200 text-transparent bg-clip-text">My Projects</span>
           </h2>
           {projects.length === 0 && (
             <p className="text-center text-gray-400 w-full glass-morphism p-8 rounded-xl">No projects found.</p>
